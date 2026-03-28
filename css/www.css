@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "regular";
+	src: url("./VT323-Regular.ttf") format("truetype");
+	}
+body {
+	background-color: black;
+        color: white; 
+        font-family: 'regular';
+        margin: 0;
+        padding: 0;
+	display: grid;
+	grid-template-rows: auto auto 1fr auto;
+	grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+    	min-height: 100vh; 
+
+.header h2 {
+       	font-size: 3rem;
+       	text-align: center;
+	}
+
+.main p {
+        font-size: 1.5rem;
+	text-align: center;
+	}
+        
+ul {
+   	list-style-type: square;
+	}
+
+.main a {
+	font-size: 1.5rem;
+	color: white;
+}
+.nav {
+    grid-area: nav;
+    background: #111;
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    background: #111;
+    padding: 10px;
+}
+.nav a {
+	font-size: 1rem;
+	color: white;
+}  
+.footer a {
+	font-size: 1rem;
+	color: gray;
+}  
