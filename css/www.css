@@ -43,9 +43,9 @@ padding: 5px 10px;
   	grid-area: main;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: top;
 	margin-top: 5rem;
-	margin-bottom: 5rem
+	margin-bottom: 5rem;
 }
 
 .footer {
@@ -90,6 +90,17 @@ padding: 5px 10px;
 }
 .main a:visited {
 	color: lightgray;
+}
+
+.main .col {
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+a.tipp{
+	color: limegreen;
+}
+a.tipp:visited {
+	color: darkgreen;
 }
 
 .footer a {
