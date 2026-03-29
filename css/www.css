@@ -2,6 +2,7 @@
 	font-family: "regular";
 	src: url("./VT323-Regular.ttf") format("truetype");
 	}
+/*grundlegende einstellungen*/
 body {
 	background-color: black;
         color: white; 
@@ -17,25 +18,32 @@ body {
         "footer";
     	min-height: 100vh; 
 }
+/*vierecke sind einfach toll*/
 ul {
    	list-style-type: square;
 	}
+
+/*grundlegende sache für die einzelnen bestandteile*/
 
 .nav {
    	grid-area: nav;
   	background: #111;
    	padding: 10px;
-padding: 5px 10px;
+	padding: 5px 10px;
+	
+	/*um den header in der navleiste anzuzeigen*/
  	display: grid;
  	grid-template-columns: 1fr auto;
    	align-items: center;
 
+	/*sticky ist auch toll*/
      	position: sticky;
     	top: 0;
 	z-index: 1000;
 }
 
 .header {
+	/*position in der nav leiste*/
 	justify-self: end;
 }
 
@@ -55,6 +63,10 @@ padding: 5px 10px;
 	color: gray;
 	padding: 10px;
 }
+
+/*einstellungen für einzelne bestandteile*/
+
+/*navleiste*/
 .nav a {
 	font-size: 1rem;
 	color: white;
@@ -84,14 +96,22 @@ padding: 5px 10px;
        	font-size: 2rem;
 	margin: 0;
 	}
+
+/*hauptteil*/
+
 .main a {
 	font-size: 1.5rem;
 	color: white;
 }
-.main a:visited {
+a.main:visited {
 	color: lightgray;
 }
-
+a.my_stuff {
+	text-decoration: underline orange;
+}
+a.my_stuff:hover {
+	color: orange;
+}
 .main .col {
 	margin-left: 4rem;
 	margin-right: 4rem;
@@ -103,11 +123,16 @@ a.tipp:visited {
 	color: darkgreen;
 }
 
+/*einstellungen für den footer*/
+
 .footer a {
 	font-size: 1rem;
 	color: gray;
 	margin-top: 0.5rem;
 }  
+.footer a:hover{
+	color: white;
+}
 .footer p {
 	margin: 0;
 }
