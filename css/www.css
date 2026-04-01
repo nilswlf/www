@@ -28,7 +28,6 @@ ul {
 .nav {
    	grid-area: nav;
   	background: #111;
-   	padding: 10px;
 	padding: 5px 10px;
 	
 	/*um den header in der navleiste anzuzeigen*/
@@ -140,3 +139,22 @@ a.tipp:visited {
         font-size: 1.5rem;
 	text-align: center;
 	}
+
+@media (max-width: 480px) {
+	body {
+		font-size: 14px;
+	}
+
+	.nav a {
+		display: block;
+		margin: 0.3rem 0;
+	}
+
+	.header h2 {
+		font-size: 1.4rem;
+	}
+
+	.main p {
+		font-size: 1.1rem;
+	}
+}
