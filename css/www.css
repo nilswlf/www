@@ -98,7 +98,7 @@ ul {
 	grid-area: 3 / 1 / 7 / 5;
 	text-align: center;
 	background: #004f46;
-	color: gray;
+	color: #fdbf68;
 	padding: 10px;
 }
 
@@ -178,8 +178,9 @@ a.tipp:visited {
 
 .footer a {
 	font-size: 1rem;
-	color: gray;
+	color: #fdbf68;
 	margin-top: 0.5rem;
+	text-decoration: none;
 }  
 .footer a:hover{
 	color: white;
