@@ -139,11 +139,10 @@ ul {
 /*hauptteil*/
 
 .main p {
-        font-size: 1rem;
 	text-align: flex-start;
 	}
 .main a {
-	color: white;
+	color: #d6b43e;
 }
 .main a:hover{
 	background-color:#004f46;
