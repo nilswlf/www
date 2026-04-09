@@ -28,7 +28,7 @@
 			<section>
 				<h2>seite nicht gefunden</h2>
 				<p>tja. das gibts nicht.</p>
-				<p>zurück gehts <a href"/index.html" class="my_stuff">hier</a></p>
+				<p>zurück gehts <a href"index.html" class="my_stuff">hier</a></p>
 			</section>
 			</div>
 			</div>

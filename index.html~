@@ -29,9 +29,9 @@
 			<section>
 			<h2>hier sind meine dienste</h2>
 			<ul>
-				<li><a href="https://pdf.nwlf.me" target="_blank" class="my_stuff">pdf bearbeitung</a> 	[öffentlich] </li>
 				<li><a href="https://f.nwlf.me" target="_blank" class="my_stuff">fotos</a>		[privat]		</li>
 				<li><a href="https://c.nwlf.me" target="_blank" class="my_stuff">dateiserver</a> 	[privat]		</li>
+				<li><a href="https://pdf.nwlf.me" target="_blank" class="my_stuff">pdf bearbeitung</a> 	[öffentlich] </li>
 				<li><a href="https://pad.nwlf.me" target="_blank" class="my_stuff">pad</a>	 	[studium] </li>
 				<li><a href="https://kan.nwlf.me" target="_blank" class="my_stuff">kanboard</a> 	[studium] </li>
 			</ul>
