@@ -23,7 +23,7 @@ body {
 	min-height: 100vh; 
 }
 /*vierecke sind einfach toll*/
-ul {
+ul, li{
    	list-style-type: square;
 	}
 
@@ -31,7 +31,7 @@ ul {
 
 .nav {
    	grid-area: 1 / 1 / 2 / 5;
-  	background: #004f46;
+  	background: #437742;
 	padding: 5px 10px;
 	margin: 0;
 	align-items: center;
@@ -98,7 +98,7 @@ ul {
 .footer {
 	grid-area: 3 / 1 / 7 / 5;
 	text-align: center;
-	background: #004f46;
+  	background: #437742;
 	color: #fdbf68;
 	padding: 10px;
 }
