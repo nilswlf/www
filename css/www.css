@@ -67,7 +67,7 @@ a {
 .col_left,
 .col_mid,
 .col_right {
-    min-width: 200px;
+	min-width: 200px;
 }
 
 .home {
@@ -91,6 +91,7 @@ a {
   	background: #004f46;
 	color: #fdbf68;
 	padding: 10px;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /*einstellungen für einzelne bestandteile*/
