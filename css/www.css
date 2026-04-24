@@ -125,7 +125,8 @@ a {
 	transition: background-color 0.3s ease;
 	padding: 0.3rem;
 	background-color:#004f46;
-	border-radius: 10px
+	border-radius: 15px;
+	text-decoration: none;
 }
 a.main:visited {
 	color: #fdbf68;
