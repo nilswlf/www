@@ -9,7 +9,6 @@
 /* Quelle der Schrifft: https://fontsource.org/fonts/stack-sans-notch
  * Urheber: https://github.com/DylanYoungKoto/Stack-Sans
  * */
-	
 /*grundlegende einstellungen
  * Farbpallete von  https://www.wada-sanzo-colors.com/combination/classic/278
  * */
@@ -34,14 +33,10 @@ ul, li{
 a {
 	color: white;
 }
-
 h2 {
-	
         font-family: 'header';
 }
-
 /*grundlegende sache für die einzelnen bestandteile*/
-
 .nav {
    	grid-area: 1 / 1 / 2 / 5;
   	background: #004f46;
@@ -82,7 +77,6 @@ h2 {
 .blog{
 	display: block;
 }
-
 .footer {
 	grid-area: 3 / 1 / 7 / 5;
 	text-align: center;
@@ -91,21 +85,17 @@ h2 {
 	padding: 10px;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
-
 /*einstellungen für einzelne bestandteile*/
-
 /*navleiste*/
 .nav_links {
 	grid-area: 1 / 1 / 2 / 2;
 	text-align: left;
 }
-
 .nav_header {
         font-family: 'header';
 	grid-area: 1 / 2 / 2 / 3;
 	text-align: right;
 }
-
 .nav a {
 	font-size: 1.1rem;
 	text-decoration: none;
@@ -125,7 +115,6 @@ h2 {
        	font-size: 2rem;
 	margin: 0;
 	}
-
 /*hauptteil*/
 
 .main p {
@@ -156,13 +145,9 @@ a.tipp:visited {
 .sub_nav p {
 	margin: 0;
 }
-.blog p {
-	text-align: flex-start;
-	}
 .main_col p {
 	}
 /*einstellungen für den footer*/
-
 .footer a {
 	font-size: 1rem;
 	color: #fdbf68;
@@ -220,5 +205,4 @@ a.tipp:visited {
 	.footer {
 		grid-area: 4 / 1 / 7 / 2;
 	}
-
 }
