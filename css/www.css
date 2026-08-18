@@ -12,9 +12,17 @@
 /*grundlegende einstellungen
  * Farbpallete von  https://www.wada-sanzo-colors.com/combination/classic/278
  * */
+
+:root {
+  --primary-bg-color: #437742;
+  --primary-color: white;
+  --sec-bg-color: #004f46;
+  --sec-color: #fdbf68;
+}
+
 body {
-	background-color: #437742;
-        color: white; 
+	background-color: var(--primary-bg-color);
+        color: var(--primary-color); 
         font-family: 'regular';
         margin: 0;
         padding: 0;
@@ -31,7 +39,7 @@ ul, li{
    	list-style-type: square;
 	}
 a {
-	color: white;
+	color: var(--primary-color);
 }
 h2 {
         font-family: 'header';
@@ -39,26 +47,23 @@ h2 {
 /*grundlegende sache für die einzelnen bestandteile*/
 .nav {
    	grid-area: 1 / 1 / 2 / 5;
-  	background: #004f46;
+  	background: var(--sec-bg-color);
 	padding: 5px 10px;
 	margin: 0;
 	align-items: center;
-
 	display: grid;
 	grid-template-columns: auto auto;
-
-	/*sticky ist auch toll*/
      	position: sticky;
     	top: 0;
 	z-index: 1000;
-
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 .main {
 	grid-area: 2 / 1 / 6 / 5;
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
         font-size: 1rem;
@@ -74,16 +79,12 @@ h2 {
 }
 .home_right{
 }
-.blog{
-	display: block;
-}
 .footer {
-	grid-area: 3 / 1 / 7 / 5;
+	grid-area: 5 / 1 / 7 / 5;
+  	background: var(--sec-bg-color);
 	text-align: center;
-  	background: #004f46;
-	color: #fdbf68;
+	color: var(--sec-color);
 	padding: 10px;
-	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 /*einstellungen für einzelne bestandteile*/
 /*navleiste*/
@@ -116,7 +117,6 @@ h2 {
 	margin: 0;
 	}
 /*hauptteil*/
-
 .main p {
 	text-align: flex-start;
 	}
@@ -128,7 +128,7 @@ h2 {
 	text-decoration: none;
 }
 a.main:visited {
-	color: #fdbf68;
+	color: var(--sec-color);
 }
 a.my_stuff {
 	text-decoration: underline #d6b43e;
@@ -136,27 +136,17 @@ a.my_stuff {
 a.my_stuff:hover {
 	color: #d6b43e;
 }
-a.tipp{
-	color: #fdbf68;
-}
-a.tipp:visited {
-	color: #f5ecc2;
-}
 .sub_nav p {
 	margin: 0;
 }
-.main_col p {
-	}
 /*einstellungen für den footer*/
 .footer a {
-	font-size: 1rem;
-	color: #fdbf68;
-	margin-top: 0.5rem;
+	color: var(--sec-color);
 	text-decoration: none;
 	transition: color 0.3s ease;
 }  
 .footer a:hover{
-	color: white;
+	color: var(--primary-color);
 }
 .footer p {
 	margin: 0;
@@ -172,7 +162,6 @@ a.tipp:visited {
 	}
 	.nav {
 		grid-area: 1 / 1 / 2 / 5;
-		
 		display: grid; 
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(2, auto);
@@ -194,9 +183,6 @@ a.tipp:visited {
 		margin-top: 2%;
 		margin-left: 5%;
 		margin-right: 5%;
-	}
-	.main_col {
-	        flex-direction: column;
 	}
 	.home {
 		display: flex;
