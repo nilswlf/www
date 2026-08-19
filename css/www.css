@@ -14,10 +14,11 @@
  * */
 
 :root {
-  --primary-bg-color: #437742;
-  --primary-color: white;
-  --sec-bg-color: #004f46;
-  --sec-color: #fdbf68;
+  --primary-bg-color: #ffefae;
+  --primary-color: #42533e;
+  --sec-bg-color: #793327;
+  --sec-color: #f37f94;
+  --my-links-color: #f3a257;
 }
 
 body {
@@ -97,21 +98,23 @@ h2 {
         font-family: 'header';
 	grid-area: 1 / 2 / 2 / 3;
 	text-align: right;
+	color: var(--primary-bg-color);
 }
 .nav a {
 	font-size: 1.1rem;
 	text-decoration: none;
 	transition: color 0.3s ease;
+	color: var(--primary-bg-color);
 }
 .nav a:hover {
-	color: #d6b43e;
+	color: var(--my-links-color);
 }
 .nav a.active {
-	color: #d6b43e;
+	color: var(--my-links-color);
 }
 .nav a::after {
 	content: "   |   ";
-	color: white;
+	color: var(--primary-bg-color);
 }
 .nav_header h1 {
        	font-size: 2rem;
@@ -122,20 +125,17 @@ h2 {
 	text-align: flex-start;
 	}
 .main a:hover{
-	transition: background-color 0.3s ease;
-	padding: 0.3rem;
-	background-color: var(--sec-bg-color);
-	border-radius: 15px;
-	text-decoration: none;
+	transition: text-decoration 0.3s ease;
+	text-decoration: underline wavy 0.1px;
 }
 a.main:visited {
 	color: var(--sec-color);
 }
 a.my_stuff {
-	text-decoration: underline #d6b43e;
+	text-decoration: underline var(--my-links-color);
 }
 a.my_stuff:hover {
-	color: #d6b43e;
+	text-decoration-color: var(--my-links-color);
 }
 .sub_nav p {
 	margin: 0;
@@ -147,7 +147,8 @@ a.my_stuff:hover {
 	transition: color 0.3s ease;
 }  
 .footer a:hover{
-	color: var(--primary-color);
+	transition: text-decoration 0.3s ease;
+	text-decoration: underline wavy 0.1px;
 }
 .footer p {
 	margin: 0;
