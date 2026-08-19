@@ -53,9 +53,6 @@ h2 {
 	align-items: center;
 	display: grid;
 	grid-template-columns: auto auto;
-     	position: sticky;
-    	top: 0;
-	z-index: 1000;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 .main {
@@ -78,6 +75,10 @@ h2 {
 	min-width: 200px;
 }
 .home_right{
+}
+.info p {
+	border-left-style: solid;
+	padding: 5px;
 }
 .footer {
 	grid-area: 5 / 1 / 7 / 5;
@@ -112,7 +113,7 @@ h2 {
 	content: "   |   ";
 	color: white;
 }
-.header h1 {
+.nav_header h1 {
        	font-size: 2rem;
 	margin: 0;
 	}
@@ -123,7 +124,7 @@ h2 {
 .main a:hover{
 	transition: background-color 0.3s ease;
 	padding: 0.3rem;
-	background-color:#004f46;
+	background-color: var(--sec-bg-color);
 	border-radius: 15px;
 	text-decoration: none;
 }
