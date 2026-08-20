@@ -24,6 +24,7 @@
 				<a href="#dienste" class="my_stuff">Familien Dienste</a> |
 				<a href="#VPN" class="my_stuff">VPN Verbindung</a> |
 				<a href="#fotos" class="my_stuff">Foto App</a> |
+				<a href="#backup" class="my_stuff">Backup</a> |
 			</div>
 			<div class="home">
 				<div class="home_right">
@@ -42,7 +43,7 @@
 					<li><a href="http://192.168.0.10:3000" target="_blank" class="my_stuff">Übersicht</a> 	 </li>
 					<li><a href="http://192.168.0.10:8083" target="_blank" class="my_stuff">Bibliothek</a> 	 </li>
 					<li><a href="http://192.168.0.10:3670" target="_blank" class="my_stuff">Dokumente</a> 	 </li>
-					<li><a href="http://192.168.0.12:2283" target="_blank" class="my_stuff">Fotos [große Dateine]</a>		 </li>
+					<li><a href="http://192.168.0.12:2283" target="_blank" class="my_stuff">Fotos</a> [<a href="#fotos" class="my_stuff">siehe</a>]
 				</ul>	
 				<ul>
 					lokal
@@ -55,13 +56,55 @@
 			</div>
 				<div class="info">
 					<h2 id="VPN">VPN Verbindung</h2>
-					<p>
-					Sollte in der Tailscale App oben `t...n.github` stehen, einfach auf den blauen Knopf drücken um zu verbinden. Sollte dies nicht der Fall sein, so gehe auf dein Profilbild, dort auf `reauthenticate`, melde dich gegeben falles an, und wähle mein Netzwerk aus. Nachdem ich euch bestätigt habe könnt hier die Dienste nutzen.
-					</p>
+					<div class="info_box">
+					Sollte in der Tailscale App oben `t...n.github` stehen, einfach auf den blauen Knopf drücken um zu verbinden. Sollte dies nicht der Fall sein, so gehe auf dein Profilbild, dort auf `reauthenticate`, melde dich gegeben falls an, und wähle mein Netzwerk aus. Nachdem ich euch bestätigt habe könnt ihr eine Verbindung aufbauen und die Dienste nutzen. Es funktioniert wenn ihr einen Schlüssel in der Benachichtigungszeile seht.
+					<ul>
+						<li><a href="https://tailscale.com/download" target="_blank">App Download</a></li>
+					</ul>
+					</div>
+
 					<h2 id="fotos">Foto App</h2>
-					<p>
-					Sollte die Verbindung für die Fotos sein, muss das Profiel abgemendet werden. Dann fragt die App einen nach einer URL, da die folgende eingaben <b>http://192.168.0.12:2283</b>. Dannach kann die gleiche Anmeldung benutzt werden wie sonst auch. Nach dem alles hochgeladen ist, wieder abmelden und <b> https://f.nwlf.me </b> eingeben und wieder anmelden.
+					<div class="info_box">
+						Sollte die Verbindung für große Videos sein, muss das Profiel abgemendet werden. Dann fragt die App einen nach einer URL, da die folgende eingaben <b>http://192.168.0.12:2283</b>. Dazu muss davor eine VPN Verbindung stehen. Dannach kann die gleiche Anmeldung benutzt werden wie sonst auch. Nach dem alles hochgeladen ist, wieder abmelden und <b> https://f.nwlf.me </b> eingeben und wieder anmelden. 
+						<ul>
+							empfolene Einstellungen:
+							<li>Speicherplatz freigeben - 90 Tage</li>
+							<li>Sicherung - Backup-Obtionen - Mobiele Daten nicht verwenden</li>
+							<li>Sicherung - Backup-Obtionen - Aufladen</li>
+						</ul>
+						<ul>
+							<li><a href="https://immich.app/download" target="_blank">App Download</a></li>
+							<li><a href="https://github.com/kaii-lb/LavenderPhotos" target="_blank">alternative App</a></li>
+						</ul>
+					</div>
+
+					<h2 id="datein">Laufwerke Einbinden</h2>
+					<div class="info_box">
+						Um ein Laufwerk in einen Client, Rechner oder Telefon, einzubinden wird das SMB Protokoll unterstützt.
+						Dabei einfach die Adresse des Severs da eingeben wo der Pfad steht, z.b. smb://192.168.0.1, oder bei Netzwerklaufwerk eingaben. WORKGROUP ist die Standart domän, kann auch frei gelassen werden.
+						<ul>
+							Android Client
+							<li>Samsung untertstüzt es</li>
+							<li><a href="https://play.google.com/store/apps/details?id=me.zhanghai.android.files" target="_blank">files</a></li>
+						<ul>
+					</div>
+
+					<h2 id="backup">Backup</h2>
+					<div class="info_box">
+					Die Daten werden täglich auf einer lokalen Festplatte und auf einem entfernten deutschen Server verschlüsselt archiviert. Es werden für Bilder 4 tägliche, 4 monatliche und 12 jährliche Archive gespeichert. Extern werden die letzten 14 Tage und die letzeten 4 Wochen gespeichert.
+					Zusätlich ist bei den Bildern der Papierkorb aktiveiert, eine Löschung geschiet erst nach 30 Tagen.
+					<ul> nicht archiviert werden:
+						<li>GPS Tracker</li>
+						<li>Status Monitor</li>
+					</ul>
+					</div>
+
 				</div>
+		</div>
+		<div class="footer">
+		<p>
+						Letztes Update: 20.08.2026
+		</p>
 		</div>
 
 	</body>
