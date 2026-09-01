@@ -10,8 +10,8 @@
                  </div>
 		<div class="nav">
 			<div class="nav_links">
-				<a href="index.html">wohnzimmer</a>
-                        	<a href="link/links.html">linksammlung</a>
+				<a href="index">wohnzimmer</a>
+                        	<a href="links">linksammlung</a>
 			</div>
 		
 			<div class="nav_header">
@@ -55,7 +55,7 @@
 
 		<div class="footer">
 		<p>
-		|	<a href="https://stat.nwlf.me" target="_blank">Status Monitor</a> | <a href="impressum.html">Impressum</a> |  <a href="https://codeberg.org/nwlf/www" target="_blank">Webseite source</a> | Human made |
+		|	<a href="https://stat.nwlf.me" target="_blank">Status Monitor</a> | <a href="impressum">Impressum</a> |  <a href="https://codeberg.org/nwlf/www" target="_blank">Webseite source</a> | Human made |
 		</p>
 		</div>
 	</body>

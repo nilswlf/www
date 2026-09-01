@@ -9,8 +9,8 @@
 	<body>
 		<div class="nav">
 			<div class="nav_links">
-				<a href="index.html">wohnzimmer</a>
-                        	<a href="link/links.html">linksammlung</a>
+				<a href="index">wohnzimmer</a>
+                        	<a href="links">linksammlung</a>
 			</div>
 		
 			<div class="nav_header">
